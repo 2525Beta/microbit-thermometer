@@ -1,4 +1,4 @@
-input.onButtonPressed(Button.A, function () {
+input.onButtonPressed(Button.A, function on_button_pressed_a() {
     if (30 <= input.temperature()) {
         basic.showNumber(input.temperature())
         basic.showString("hot")
@@ -14,11 +14,12 @@ input.onButtonPressed(Button.A, function () {
     } else {
         basic.clearScreen()
     }
+    
 })
-input.onButtonPressed(Button.AB, function () {
+input.onButtonPressed(Button.AB, function on_button_pressed_ab() {
     basic.clearScreen()
 })
-input.onButtonPressed(Button.B, function () {
+input.onButtonPressed(Button.B, function on_button_pressed_b() {
     if (45 < input.compassHeading() && 135 >= input.compassHeading()) {
         basic.showString("east")
     } else if (135 < input.compassHeading() && 225 >= input.compassHeading()) {
@@ -30,4 +31,5 @@ input.onButtonPressed(Button.B, function () {
     } else {
         basic.clearScreen()
     }
+    
 })
